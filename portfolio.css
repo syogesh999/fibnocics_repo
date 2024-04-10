@@ -1,0 +1,75 @@
+/* Basic Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+img {
+  width: 200px;
+  max-width: 100%;
+  height: 200px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+  background-color: #bbe8e7;
+  color: #020703;
+  text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+/* Main Content Styles */
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: #ddd;
+  padding: 1rem;
+}
