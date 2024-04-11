@@ -45,6 +45,7 @@ nav {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 nav ul {
@@ -70,6 +71,10 @@ section {
 /* Footer Styles */
 footer {
   text-align: center;
-  background-color: #ddd;
+  background-color: #7ee7e7;
   padding: 1rem;
+}
+
+footer p {
+  margin: 0;
 }

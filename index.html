@@ -4,26 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FIBNOCICS CONSULTANCY</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <script src="sidebar.js"></script>
+
   </head>
-
   <body>
-    <header>
-      <h1>FIBNOCICS CONSULTANCY</h1>
-      <button id="theme-toggle">Toggle Dark Mode</button>
-    </header>
+    <style>
+      /* Additional CSS styles for the sidebar menu */
+      .sidenav {
+      height: 100%;
+      width: 0; /* Initially hidden */
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      padding-top: 60px; /* Adjust padding to match the height of the header */
+      z-index: 1;
+      overflow-x: hidden;
+      transition: 0.5s
+      }
 
-    <nav>
+      .sidenav a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidenav a:hover {
+        background-color: #555;
+      }
+
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+      /* Styles for the open/close button */
+      #openBtn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 2;
+        color: #fff;
+      }
+    </style>
+    </head>
+    <body><div id="mySidenav" class="sidenav">
+      <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index.html">Home</a>
       <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
       <a href="portfilo.html">Portfolio</a>
-      <a href="#complaints">Complaints</a>
-      <a href="#terms">Terms and Conditions</a>
-    </nav>
+      <a href="#contact">Contact</a>
+      <a href="terms-and-conditions.html">terms-and-conditions</a>
+      <!-- Add more menu items as needed -->
+    </div>
+    <span id="openBtn" onclick="openNav()">&#9776;</span>
+  </body>
+
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+        <h1>FIBNOCICS CONSULTANCY</h1>
+      </div>
+    </header>
 
     <section id="home">
-      <h2>HI THERE WE are HERE from FIBNOCICS CONSULTANCY</h2>
+      <h2>HI THERE 👏, WE are HERE from FIBNOCICS CONSULTANCY</h2>
       <p>
         We offer TOEFL and GRE exam preparation for BTech graduates and online
         booking services for flights, recharges, trains, buses, and other
@@ -47,33 +104,27 @@
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>For inquiries, contact us via:</p>
-      <p>CALL NOW: [9014602005]</p>
-      <p>WhatsApp: <a href="https://wa.me/9014602005">CHAT NOW</a></p>
-    </section>
-
     <section id="portfolio">
       <h2>Portfolio</h2>
       <img src="DP.jpg" alt="SANKRANTHI YOGESH" />
     </section>
 
-    <section id="complaints">
-      <h2>Complaints</h2>
-      <p>If you have any complaints, please contact us.</p>
-      <!-- Add complaint form or contact information -->
-    </section>
-
-    <section id="terms">
-      <h2>Terms and Conditions</h2>
-      <p>Include your terms and conditions here.</p>
-      <!-- Add terms and conditions text -->
-    </section>
-
     <footer>
       <p>&copy; 2024 FIBNOCICS CONSULTANCY. All rights reserved.</p>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, contact us via:</p>
+        <p>CALL NOW: [9014602005]</p>
+        <p>WhatsApp: <a href="https://wa.me/9014602005">CHAT NOW</a></p>
+      </section>
+
+      <section id="terms">
+        <h2>Terms and Conditions</h2>
+        <p>
+          By using this website, you agree to our
+          <a href="terms-and-conditions.html">Terms and Conditions</a>.
+        </p>
+      </section>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
