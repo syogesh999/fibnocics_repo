@@ -8,10 +8,20 @@ body {
 }
 
 header {
+  font-size: 100px;
   background-color: #bbe8e7;
   color: #020703;
   text-align: center;
   padding: 20px;
+}
+
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 50px;
 }
 
 nav {
@@ -55,12 +65,34 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
+  font-size: medium;
+  padding: 10px;
   width: 100%;
+  margin-top: auto;
+  size: 100px;
+  height: 300px;
 }
 
 footer p {
   margin: 0;
+  size: 50px;
+}
+
+.header-content {
+  display: flexbox;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 50px;
+  order: 1;
+}
+
+.logo img {
+  width: auto;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  order: 1;
 }
