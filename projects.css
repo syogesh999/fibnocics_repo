@@ -60,6 +60,18 @@ header {
   margin-bottom: 15px;
 }
 
+/* New CSS rule for handling multiple images */
+.project img:first-child {
+  display: block;
+  margin: 0 auto 15px auto; /* Center the first image */
+}
+
+.project img:not(:first-child) {
+  display: block;
+  max-width: 80%; /* Set maximum width for the second image */
+  margin: 0 auto 15px auto; /* Center the second image */
+}
+
 .project h3 {
   font-size: 24px;
   margin-bottom: 10px;
