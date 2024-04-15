@@ -87,6 +87,12 @@ footer p {
   margin-bottom: 20px;
 }
 
+.resume-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
 .project img {
   width: 100%;
   height: auto;
