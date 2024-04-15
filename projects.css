@@ -1,4 +1,4 @@
-/* styles.css */
+/* projects.css */
 
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -16,17 +16,12 @@ header {
 }
 
 .logo {
-  margin-right: 50px;
-  order: 1;
+  margin-right: 20px;
 }
 
 .logo img {
-  width: auto;
-  max-width: 150px;
-  height: auto;
+  max-width: 100px;
   border-radius: 50%;
-  overflow: hidden;
-  order: 1;
 }
 
 .nav {
@@ -36,7 +31,7 @@ header {
 }
 
 .nav a {
-  text-decoration: dashed;
+  text-decoration: none;
   color: #333;
   margin: 0 15px;
   transition: color 0.3s ease;
@@ -47,9 +42,7 @@ header {
 }
 
 #projects {
-  padding: 50px;
-  font-size: 50px;
-  align-items: center;
+  padding: 20px;
 }
 
 .project {
@@ -61,11 +54,10 @@ header {
 }
 
 .project img {
-  width: 800px;
-  height: 500px;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
-  align-self: center;
 }
 
 .project h3 {
