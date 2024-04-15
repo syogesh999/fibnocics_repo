@@ -15,6 +15,20 @@ header {
   padding: 10px;
 }
 
+.logo {
+  margin-right: 50px;
+  order: 1;
+}
+
+.logo img {
+  width: auto;
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  order: 1;
+}
+
 .nav {
   background-color: #75dede;
   text-align: center;
