@@ -36,7 +36,7 @@ header {
 }
 
 .nav a {
-  text-decoration: none;
+  text-decoration: dashed;
   color: #333;
   margin: 0 15px;
   transition: color 0.3s ease;
@@ -65,7 +65,7 @@ header {
   height: 500px;
   border-radius: 8px;
   margin-bottom: 15px;
-  align-items: center;
+  align-self: center;
 }
 
 .project h3 {
