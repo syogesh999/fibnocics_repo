@@ -47,7 +47,9 @@ header {
 }
 
 #projects {
-  padding: 20px;
+  padding: 50px;
+  font-size: 50px;
+  align-items: center;
 }
 
 .project {
@@ -59,10 +61,11 @@ header {
 }
 
 .project img {
-  width: 400px;
-  height: 400px;
+  width: 800px;
+  height: 500px;
   border-radius: 8px;
   margin-bottom: 15px;
+  align-items: center;
 }
 
 .project h3 {
