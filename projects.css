@@ -1,0 +1,84 @@
+/* styles.css */
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #bbe8e7;
+  color: #020703;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav {
+  background-color: #75dede;
+  text-align: center;
+  padding: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #555;
+}
+
+#projects {
+  padding: 20px;
+}
+
+.project {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 10px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.project a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
