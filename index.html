@@ -6,45 +6,50 @@
     <title>FIBNOCICS CONSULTANCY</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="sidebar.css" />
-    <script src="sidebar.js"></script>
-
-  </head>
-  <body>
+    <script src="sidebar.js" defer></script>
+    <script src="darkmode.js" defer></script>
     <style>
-      /* Additional CSS styles for the sidebar menu */
+      /* General Styling */
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+        color: #333;
+        transition: all 0.5s ease-in-out;
+      }
+
+      /* Sidebar */
       .sidenav {
-      height: 100%;
-      width: 0; /* Initially hidden */
-      position: a;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #333;
-      padding-top: 60px; /* Adjust padding to match the height of the header */
-      z-index: 1;
-      overflow-x: hidden;
-      transition: 0.5s
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #2c3e50;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
       }
 
       .sidenav a {
-        padding: 10px 15px;
-        text-decoration: none;
-        font-size: 20px;
-        color: #fff;
+        padding: 12px 20px;
         display: block;
+        font-size: 18px;
+        color: #ecf0f1;
         transition: 0.3s;
       }
 
       .sidenav a:hover {
-        background-color: #555;
+        background-color: #34495e;
       }
 
       .sidenav .closebtn {
         position: absolute;
-        top: 0;
-        right: 10px;
-        font-size: 36px;
-        margin-left: 50px;
+        top: 10px;
+        right: 25px;
+        font-size: 30px;
+        color: #ecf0f1;
       }
 
       #openBtn {
@@ -53,82 +58,140 @@
         left: 20px;
         font-size: 30px;
         cursor: pointer;
+        color: #2c3e50;
         z-index: 2;
-        color: #fff;
+      }
+
+      /* Header */
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background: #2980b9;
+        color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .logo img {
+        height: 60px;
+      }
+
+      /* Sections */
+      section {
+        padding: 50px;
+        text-align: center;
+        background: white;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 900px;
+        transition: transform 0.3s;
+      }
+
+      section:hover {
+        transform: translateY(-5px);
+      }
+
+      h2 {
+        color: #2980b9;
+        font-size: 28px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      ul li {
+        background: #ecf0f1;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+
+      ul li:hover {
+        background: #d5dbdb;
+      }
+
+      /* Footer */
+      footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
       }
     </style>
-    </head>
-    <body><div id="mySidenav" class="sidenav">
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
       <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="index.html">Home</a>
       <a href="#services">Services</a>
-      <a href="portfilo.html">Portfolio</a>
-      <a href="terms-and-conditions.html">terms-and-conditions</a>
-      <!-- Add more menu items as needed -->
+      <a href="portfolio.html">Portfolio</a>
+      <a href="terms-and-conditions.html">Terms & Conditions</a>
     </div>
     <span id="openBtn" onclick="openNav()">&#9776;</span>
-  </body>
 
     <header>
-      <div class="header-content">
-        <div class="logo">
-          <img src="logo.png" alt="Logo" />
-        </div>
-        <h1>FIBNOCICS CONSULTANCY</h1>
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
       </div>
+      <h1>FIBNOCICS CONSULTANCY</h1>
       <div class="toggle-container">
         <input type="checkbox" id="dark-mode-toggle" />
         <label for="dark-mode-toggle">💡</label>
-    </div>
+      </div>
     </header>
 
     <section id="home">
-      <h2>HI THERE 👏, WE are HERE from FIBNOCICS CONSULTANCY</h2>
+      <h2>Welcome to FIBNOCICS CONSULTANCY</h2>
       <p>
-        We offer TOEFL and GRE exam preparation for BTech graduates and online
-        booking services for flights, recharges, trains, buses, and other
+        Providing TOEFL & GRE preparation, online bookings, visa guidance, and
         consultancy services.
-      </p>
-      <p>
-        Get info about studying abroad by contacting us via call or WhatsApp at
-        9014602005.
       </p>
     </section>
 
     <section id="services">
-      <h2>Services Offered</h2>
+      <h2>Our Services</h2>
       <ul>
-        <li>TOEFL and GRE exam preparation for BTech graduates</li>
-        <li>Online booking services for flights, recharges, trains, buses</li>
-        <li>Entrance Exam Preparation</li>
-        <li>Visa Guidance</li>
-        <li>Budget Management</li>
-        <!-- Add more services as needed -->
+        <li>TOEFL & GRE Exam Preparation</li>
+        <li>Online Booking for Flights, Trains, and Buses</li>
+        <li>Visa Guidance & Budget Management</li>
+        <li>Study Abroad Consultation</li>
       </ul>
     </section>
 
     <section id="portfolio">
       <h2>Portfolio</h2>
-      <img src="DP.jpg" alt="SANKRANTHI YOGESH"/>
+      <img
+        src="DP.jpg"
+        alt="SANKRANTHI YOGESH"
+        style="width: 200px; border-radius: 50%"
+      />
     </section>
 
     <footer>
       <p>&copy; 2024 FIBNOCICS CONSULTANCY. All rights reserved.</p>
       <section id="contact">
         <h2>Contact Us</h2>
-        <p>For inquiries, contact us via:</p>
-        <p>CALL NOW: 9014602005</p>
-        <p>WhatsApp: <a href="https://wa.me/9014602005">CHAT NOW</a></p>
-      </section>
-
-      <section id="terms">
-        <h2>Terms and Conditions</h2>
+        <p>Call Now: 9014602005</p>
         <p>
-          By using this website, you agree to our
-          <a href="terms-and-conditions.html">Terms and Conditions</a>.
+          WhatsApp:
+          <a href="https://wa.me/9014602005" style="color: #f1c40f">Chat Now</a>
         </p>
       </section>
-      <script src="darkmode.js"></script>
+      <section id="terms">
+        <h2>Terms & Conditions</h2>
+        <p>
+          By using this website, you agree to our
+          <a href="terms-and-conditions.html" style="color: #f1c40f"
+            >Terms & Conditions</a
+          >.
+        </p>
+      </section>
     </footer>
   </body>
 </html>
