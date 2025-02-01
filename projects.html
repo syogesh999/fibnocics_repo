@@ -1,71 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | FIBNOCICS CONSULTANCY</title>
     <link rel="stylesheet" href="projects.css" />
-  </head>
-  <body>
+    <script src="darkmode.js" defer></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            transition: all 0.5s ease-in-out;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: #2980b9;
+            color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .nav {
+            text-align: center;
+            padding: 10px;
+            background: #2c3e50;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .nav a:hover {
+            background: #34495e;
+            border-radius: 5px;
+        }
+
+        #projects {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #2980b9;
+            text-align: center;
+        }
+
+        .project {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .project img {
+            width: 80%;
+            max-width: 600px;
+            margin: 10px auto;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .project img:hover {
+            transform: scale(1.05);
+        }
+
+        .project h1 {
+            color: #2c3e50;
+        }
+
+        .project p {
+            text-align: left;
+            max-width: 800px;
+            margin: 10px auto;
+            line-height: 1.6;
+        }
+
+        .project a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .project a:hover {
+            background: #1f618d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
     <header>
-      <div class="header-content">
-        <div class="logo">
-          <img src="logo.png" alt="Logo" />
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" />
+            </div>
+            <h1>FIBNOCICS CONSULTANCY</h1>
         </div>
-        <h1>FIBNOCICS CONSULTANCY</h1>
-      </div>
     </header>
 
     <nav class="nav">
-      <a href="index.html">Home</a>
+        <a href="index.html">Home</a>
     </nav>
 
     <section id="projects">
-      <h2>PROJECTS</h2>
-
-      <div class="project">
-        <img src="webbrowser_prevw1.jpg" alt="webbrowser preview 1" />
-        <img src="webbrowser_prevw2.jpg" alt="webbrowser preview 2" />
-        <img src="webbrowser_prevw3.jpg" alt="webbrowser preview 3" />
-        <h1>WEB BROWSER</h1>
-        <p>
-          <h3>You do not know what web browsers are?</h3>
-          A web browser is a software
-          program that allows you to access the internet and all the web pages
-          in it. Most common web browsers are Google Chrome, Microsoft Edge,
-          Brave, Firefox, and Safari, and you are most definitely reading this
-          article in one of these.
-        </p>
-
-        <p>
-          The objective of this Python project is to create a GUI based Web
-          Browser. To build this, you must have intermediate understanding of
-          the PyQt5 library, and its modules, including the WebEngineWidgets
-          module that you will need to install separately.
-        </p>
-
-        <p>
-          <h3>Project Prerequisites:</h3> To build this Python Web Browser project, we
-          will need the following libraries: 1. PyQt5 – To create the GUI. 2.
-          sys.argv – To get the inputs entered from the command line 3.
-          PyQt5.QtCore.QUrl – The QUrl class will be used to convert string
-          objects to a Qt acceptable URL object that will navigate through all
-          the websites. 4. PyQt5.QtWidgets – To get the Widgets, including but
-          not limited to: a. QAction – This widget allots an abstract user
-          interface action to widgets in the form of text. b. QLineEdit – Single
-          line input box [Tkinter alternative: Entry widget] c. QToolbar – This
-          widget is used to add a frame-like container to the top of the window.
-          5. PyQt5.QtWebEngineWidgets.QWebEngineView – It is used to load the
-          content of a website directly from the internet.
-        </p>
-
-        <a href="Project proposal.pdf" target="_blank">View Details (PDF)</a>
-      </div>
-      <!-- Add more projects as needed -->
+        <h2>PROJECTS</h2>
+        <div class="project">
+            <img src="webbrowser_prevw1.jpg" alt="Web Browser Preview 1" />
+            <img src="webbrowser_prevw2.jpg" alt="Web Browser Preview 2" />
+            <img src="webbrowser_prevw3.jpg" alt="Web Browser Preview 3" />
+            <h1>WEB BROWSER</h1>
+            <p>
+                A web browser is a software application that allows users to access and navigate the internet.
+                Common web browsers include Google Chrome, Microsoft Edge, Brave, Firefox, and Safari.
+            </p>
+            <p>
+                This project is a GUI-based Web Browser developed using Python and PyQt5.
+                It leverages the WebEngineWidgets module for rendering web pages.
+            </p>
+            <p>
+                <strong>Project Prerequisites:</strong>
+                <ul>
+                    <li>PyQt5 – GUI Development</li>
+                    <li>sys.argv – Command-line input handling</li>
+                    <li>QUrl – URL handling for navigation</li>
+                    <li>QToolbar, QAction, QLineEdit – UI components</li>
+                    <li>QWebEngineView – Web rendering engine</li>
+                </ul>
+            </p>
+            <a href="Project proposal.pdf" target="_blank">View Details (PDF)</a>
+        </div>
     </section>
 
     <footer>
-      <p>&copy; 2024 FIBNOCICS CONSULTANCY. All rights reserved.</p>
+        <p>&copy; 2024 FIBNOCICS CONSULTANCY. All rights reserved.</p>
     </footer>
-  </body>
+</body>
 </html>
